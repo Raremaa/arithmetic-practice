@@ -24,7 +24,7 @@ public class Q3 {
 
     /**
      * 时间复杂度 O(n)
-     * 空间复杂度 O(1)
+     * 空间复杂度 O(n)
      */
     private static ArrayList<Integer> doJob(ListNode listNode) {
         if(listNode == null) {
