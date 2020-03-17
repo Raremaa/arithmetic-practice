@@ -13,28 +13,25 @@ public class Q7 {
 
     public static double power(double base, int exponent) {
         double result = 1;
-        if(base == 0) {
+        if (base == 0) {
             return 0;
         }
         if (exponent == 0) {
             return 1;
-        }else if(exponent > 0) {
+        } else if (exponent > 0) {
             for (int i = 0; i < exponent; i++) {
                 result *= base;
             }
-        }else {
+        } else {
             for (int i = 0; i < -exponent; i++) {
                 result *= base;
             }
-            result = 1/result;
+            result = 1 / result;
         }
-
-
-
         return result;
     }
 
     public static void main(String[] args) {
-        System.err.println(power(2,0));
+        System.err.println(power(2, 0));
     }
 }
